@@ -72,6 +72,7 @@ class SolutionDetailClass(APIView):
         
     
         solutionType=data['solution_type']
+        print(solutionType)
         previousQuestionWithSameSolutionType=Solution.objects.filter(solution_type=solutionType,solution_question=data['solution_question'])
         if previousQuestionWithSameSolutionType:
             return Response('Solution with same type already exists for this question',status=status.HTTP_400_BAD_REQUEST)

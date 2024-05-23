@@ -103,9 +103,9 @@ class Solution(models.Model):
     solution_time_complexity=models.CharField(max_length=255)
     solution_space_complexity=models.CharField(max_length=255)
     solution_type=models.CharField(max_length=255,choices=(
-        ('Brute Force Solution','Brute Force Solution'),
-        ('Optimized Solution','Optimized Solution'),
-        ('Best Solution','Best Solution')
+        ('Brute','Brute'),
+        ('Optimized','Optimized'),
+        ('Best','Best')
     
     ))
 
