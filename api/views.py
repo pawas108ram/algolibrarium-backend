@@ -16,7 +16,11 @@ class QuestionDetailClass(APIView):
             serializer=QuestionSerializer(questions,many=True)
             return Response(serializer.data,status=status.HTTP_200_OK)
         else:
-            return Response('No Questions Found',status=status.HTTP_404_NOT_FOUND)
+            default_errors = serializer.errors
+            new_error = {}
+            for field_name, field_errors in default_errors.items():
+                new_error[field_name] = field_errors[0]
+            return Response(new_error, status=status.HTTP_400_BAD_REQUEST)
     
 
 
@@ -34,7 +38,11 @@ class QuestionDetailClass(APIView):
             serializer.save()
             return Response(serializer.data,status=status.HTTP_201_CREATED)
         else:
-            return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
+            default_errors = serializer.errors
+            new_error = {}
+            for field_name, field_errors in default_errors.items():
+                new_error[field_name] = field_errors[0]
+            return Response(new_error, status=status.HTTP_400_BAD_REQUEST)
     
 
     def patch(self,request):
@@ -49,8 +57,11 @@ class QuestionDetailClass(APIView):
                     serializer.save()
                     return Response(serializer.data,status=status.HTTP_200_OK)
         else:
-            
-            return Response(serializer.error_messages,status=status.HTTP_404_NOT_FOUND)
+            default_errors = serializer.errors
+            new_error = {}
+            for field_name, field_errors in default_errors.items():
+                new_error[field_name] = field_errors[0]
+            return Response(new_error, status=status.HTTP_400_BAD_REQUEST)
     
 
     def delete(self,request):
@@ -83,7 +94,11 @@ class SolutionDetailClass(APIView):
             serializer.save()
             return Response(serializer.data,status=status.HTTP_201_CREATED)
         else:
-            return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
+            default_errors = serializer.errors
+            new_error = {}
+            for field_name, field_errors in default_errors.items():
+                new_error[field_name] = field_errors[0]
+            return Response(new_error, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self,request,questionId):
         solutions=Solution.objects.filter(solution_question=questionId)
