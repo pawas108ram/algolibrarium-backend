@@ -50,7 +50,7 @@ class QuestionDetailClass(APIView):
                     return Response(serializer.data,status=status.HTTP_200_OK)
         else:
             
-            return Response(serializer.errors,status=status.HTTP_404_NOT_FOUND)
+            return Response(serializer.error_messages,status=status.HTTP_404_NOT_FOUND)
     
 
     def delete(self,request):
