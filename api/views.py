@@ -40,6 +40,7 @@ class QuestionDetailClass(APIView):
     def patch(self,request):
         data=request.data
         id=data['id']
+        serializer=QuestionSerializer(data=data)
         if id:
             question=Question.objects.get(id=id)
             if id and question:
@@ -48,6 +49,7 @@ class QuestionDetailClass(APIView):
                     serializer.save()
                     return Response(serializer.data,status=status.HTTP_200_OK)
         else:
+            
             return Response(serializer.errors,status=status.HTTP_404_NOT_FOUND)
     
 
