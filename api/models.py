@@ -88,7 +88,7 @@ class Question(models.Model):
             max_length=100,
             choices=QUESTION_TOPICS
         ),
-        size=5,
+        size=10,
         default=list,
     )
 
