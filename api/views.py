@@ -10,7 +10,7 @@ class QuestionDetailClass(APIView):
 
     def get(self,request,user,format=None):
     
-        questions=Question.objects.filter(question_author=user)
+        questions=Question.objects.filter(question_author=user).order_by("question_created")
     
         if questions:
             serializer=QuestionSerializer(questions,many=True)
