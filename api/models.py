@@ -90,7 +90,32 @@ QUESTION_TOPICS=(
     
     ('Set', 'Set'),
     ('Suffix Automaton', 'Suffix Automaton'),
-    ('Aho-Corasick Algorithm', 'Aho-Corasick Algorithm')
+    ('Aho-Corasick Algorithm', 'Aho-Corasick Algorithm'),
+    ('SQRT Decomposition', 'SQRT Decomposition'),
+    ('Range Queries', 'Range Queries'),
+    ('Two Pointer', 'Two Pointer'),
+    ('Sliding Window', 'Sliding Window'),
+    ('Binary Search', 'Binary Search'),
+    ('Binary Search on Answer', 'Binary Search on Answer'),
+    ('Segment Tree with Lazy Propagation', 'Segment Tree with Lazy Propagation'),
+    ('Binary Indexed Tree', 'Binary Indexed Tree'),
+    ('Disjoint Set Union', 'Disjoint Set Union'),
+    ('Stars and Bars', 'Stars and Bars'),
+    ('Convex Hull', 'Convex Hull'),
+    ('Breadth First Search', 'Breadth First Search'),
+    ('Depth First Search', 'Depth First Search'),
+    ('Max Flow', 'Max Flow'),
+    ('Min Cut', 'Min Cut'),
+    ('Tortoise and Hare Algorithm', 'Tortoise and Hare Algorithm'),
+    ('Minimal Excluded Value', 'Minimal Excluded Value'),
+    ('Ternary Search', 'Ternary Search'),
+    ('Binary Exponentiation', 'Binary Exponentiation'),
+    ('Euclidean Algorithm', 'Euclidean Algorithm'),
+    ('Extended Euclidean Algorithm', 'Extended Euclidean Algorithm'),
+    ('Linear Diophantine Equations', 'Linear Diophantine Equations'),
+    ('Manacher\'s Algorithm', 'Manacher\'s Algorithm'),
+    ('Catalan Numbers', 'Catalan Numbers'),
+    ('Chinese Remainder Theorem', 'Chinese Remainder Theorem')
 )
 
     )
