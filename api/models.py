@@ -85,7 +85,12 @@ QUESTION_TOPICS=(
     ("Hungarian Algorithm", "Hungarian Algorithm"),
     ("Huffman Coding", "Huffman Coding"),
     ("Topological Sort", "Topological Sort"),
-    ("Johnson's Algorithm", "Johnson's Algorithm")
+    ("Johnson's Algorithm", "Johnson's Algorithm"),
+    ('Lowest Common Ancestor (LCA)', 'Lowest Common Ancestor (LCA)'),
+    
+    ('Set', 'Set'),
+    ('Suffix Automaton', 'Suffix Automaton'),
+    ('Aho-Corasick Algorithm', 'Aho-Corasick Algorithm')
 )
 
     )
