@@ -147,7 +147,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-   "**","https://algolibrarium.vercel.app","http://localhost:3000","http://192.168.1.6:3000","http://192.168.1.4:3000"
+   "https://algolibrarium.vercel.app","http://localhost:3000","http://192.168.1.6:3000","http://192.168.1.4:3000"
 ]
 
 
