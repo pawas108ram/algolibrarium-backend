@@ -115,7 +115,8 @@ QUESTION_TOPICS=(
     ('Linear Diophantine Equations', 'Linear Diophantine Equations'),
     ('Manacher\'s Algorithm', 'Manacher\'s Algorithm'),
     ('Catalan Numbers', 'Catalan Numbers'),
-    ('Chinese Remainder Theorem', 'Chinese Remainder Theorem')
+    ('Chinese Remainder Theorem', 'Chinese Remainder Theorem'),
+    ("Prefix Sum", "Prefix Sum"),
 )
 
     )
