@@ -8,19 +8,14 @@ from rest_framework.views import APIView
 
 class QuestionDetailClass(APIView):
 
-    def get(self,request,user,format=None):
-    
-        questions=Question.objects.filter(question_author=user).order_by("question_created")
-    
-        if questions:
-            serializer=QuestionSerializer(questions,many=True)
-            return Response(serializer.data,status=status.HTTP_200_OK)
+    def get(self, request, user, format=None):
+        questions = Question.objects.filter(question_author=user).order_by("question_created")
+        
+        if questions.exists():
+            serializer = QuestionSerializer(questions, many=True)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         else:
-            default_errors = serializer.errors
-            new_error = {}
-            for field_name, field_errors in default_errors.items():
-                new_error[field_name] = field_errors[0]
-            return Response(new_error, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": "No questions found."}, status=status.HTTP_404_NOT_FOUND)
     
 
 
