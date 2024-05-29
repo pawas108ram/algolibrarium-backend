@@ -147,8 +147,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     
 
 class Question(models.Model):
-    question_title = models.CharField(max_length=100)
-    question_link = models.CharField(max_length=255)
+    question_title = models.CharField(max_length=1000)
+    question_link = models.CharField(max_length=1000)
     question_created = models.DateTimeField(auto_now_add=True)
     question_updated = models.DateTimeField(auto_now=True)
     question_author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='questions_author', null=True, blank=True)
