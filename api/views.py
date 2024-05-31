@@ -9,7 +9,7 @@ from rest_framework.views import APIView
 class QuestionDetailClass(APIView):
 
     def get(self, request, user, format=None):
-        questions = Question.objects.filter(question_author=user).order_by("question_created")
+        questions = Question.objects.filter(question_author=user).order_by("-question_created")
         
         if questions.exists():
             serializer = QuestionSerializer(questions, many=True)
