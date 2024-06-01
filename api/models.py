@@ -117,6 +117,25 @@ QUESTION_TOPICS=(
     ('Catalan Numbers', 'Catalan Numbers'),
     ('Chinese Remainder Theorem', 'Chinese Remainder Theorem'),
     ("Prefix Sum", "Prefix Sum"),
+    ("Multiset", "Multiset"),
+    ("Deque", "Deque"),
+    ("Merge Sort", "Merge Sort"),
+    ("Quick Sort", "Quick Sort"),
+    ("Counting Sort", "Counting Sort"),
+    ("Radix Sort", "Radix Sort"),
+    ("Bucket Sort", "Bucket Sort"),
+    ("Gap Method", "Gap Method"),
+    ("Swap Sort", "Swap Sort"),
+    ("Prefix Xor", "Prefix Xor"),
+    ("Permutation Generation", "Permutation Generation"),
+    ("DP on Trees", "DP on Trees"),
+    ("DP on Graphs", "DP on Graphs"),
+    ("DP on Grid", "DP on Grid"),
+    ("DP on Strings", "DP on Strings"),
+    ("DP on Digits", "DP on Digits"),
+    ("DP on Bitmasks", "DP on Bitmasks"),
+    ("DP on Probability", "DP on Probability")
+
 )
 
     )
@@ -158,13 +177,23 @@ class Question(models.Model):
         ('Contest Question', 'Contest Question'),
         ('General Practice', 'General Practice'),
         ('Daily Challenge', 'Daily Challenge'),
-        ('Interview Question', 'Interview Question')
+        ('Interview Question', 'Interview Question'),
+
     ), max_length=100)
     question_status = models.CharField(choices=(
         ('Weak', 'Weak'),
         ('Average', 'Average'),
         ('Strong', 'Strong'),
-        ('Very Strong', 'Very Strong')
+        ('Very Strong', 'Very Strong'),
+        ('Master', 'Master'),
+        ("Solve Later", "Solve Later"),
+        ("Revisit", "Revisit"),
+        ("Revised", "Revised")
+
+
+
+
+
     ), max_length=100)
    
    
