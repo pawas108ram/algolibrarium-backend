@@ -134,7 +134,8 @@ QUESTION_TOPICS=(
     ("DP on Strings", "DP on Strings"),
     ("DP on Digits", "DP on Digits"),
     ("DP on Bitmasks", "DP on Bitmasks"),
-    ("DP on Probability", "DP on Probability")
+    ("DP on Probability", "DP on Probability"),
+    ("Probability", "Probability"),
 
 )
 
