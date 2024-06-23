@@ -179,6 +179,7 @@ class Question(models.Model):
         ('General Practice', 'General Practice'),
         ('Daily Challenge', 'Daily Challenge'),
         ('Interview Question', 'Interview Question'),
+        ("Important Algorithm", "Important Algorithm")
 
     ), max_length=100)
     question_status = models.CharField(choices=(
