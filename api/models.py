@@ -142,6 +142,9 @@ QUESTION_TOPICS=(
     ("Level Order Traversal", "Level Order Traversal"),
     ("Morris Traversal", "Morris Traversal"),
     ("Reverse Inorder Traversal", "Reverse Inorder Traversal"),
+    ("Doubly Linked List", "Doubly Linked List"),
+    ("Circular Linked List", "Circular Linked List"),
+    ("Doubly Circular Linked List", "Doubly Circular Linked List"),
     
     
 
